@@ -13,46 +13,36 @@
 
     <title>Flip the coin | devChallenges.io</title>
 
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        height: 100vh;
-      }
-
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-      }
-
-      .author-info a {
-        text-decoration: none;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- 
-
-    Flip a Coin Game
-    Press the coin or the button to flip the coin
-    Head
-    Tail
-    Random
-  
-    -->
+    
+    <div id="main">
+      <div id="heading">
+        <h1>Flip the Coin</h1>
+        <h2>Press the coin or the button to flip the coin</h2>
+      </div>
+      <div id="flip""> <!--Container for the coin and random generator-->
+        <div id="heads" class="coin">
+          <img id="headsCoin" src="resources/heads.svg" alt="heads">
+          <p>HEADS</p>
+        </div>
+        <div id="tails" class="coin">
+          <img id="tailsCoin" src="resources/tails.svg" alt="tails">
+          <p>TAILS</p>
+        </div>
+        <img src="resources/shadow.svg" alt="">
+        <p id="sideName"></p>
+        <button id="button">Random</button>
+      </div>
+    </div>
 
     <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
+      Coded by <a href="#">Shaha</a> | Challenge by
       <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
         >devChallenges.io</a
       >.
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
