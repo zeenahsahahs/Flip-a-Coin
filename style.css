@@ -4,9 +4,14 @@
         box-sizing: border-box;
       }
 
+      @font-face {
+        font-family: myFont;
+        src: url(resources/Aller_Std_BdIt.ttf);
+      }
+
       body {
         height: 100vh;
-      background-color: Pink;
+      background-color: #404a65;
       }
 
       .author-info {
@@ -27,3 +32,32 @@
       #tails {
         display: block;
       }
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 30px;
+        font-family: myFont;
+        font-weight: bolder;
+        color: #ffffff;
+        -webkit-text-stroke: 4px black;
+        paint-order: stroke fill;
+      }
+
+      h2{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 15px;
+        font-family: myFont;
+        font-weight: bolder;
+        color: #ffffff;
+      }
+
+      .coin{
+        align-items: center;
+        display: block;
+        margin: 60px auto;
+        width: 150px;
+        height: 200px;
+      }
+
+      
